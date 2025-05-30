@@ -1,0 +1,116 @@
+{
+  "name": "dynamic-procurement-dashboard",
+  "version": "6.0.0",
+  "description": "A powerful React-based dashboard system that generates charts dynamically using parameterized configurations. Features dynamic SQL generation, interactive parameter controls, and multiple chart types for procurement spend analysis.",
+  "keywords": [
+    "react",
+    "dashboard",
+    "charts",
+    "procurement",
+    "analytics",
+    "dynamic-sql",
+    "recharts",
+    "tailwindcss",
+    "data-visualization"
+  ],
+  "author": {
+    "name": "Dynamic Procurement Team",
+    "email": "contact@dynamicprocurement.com",
+    "url": "https://github.com/myownipgit/dynamic-procurement-dashboard"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myownipgit/dynamic-procurement-dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/myownipgit/dynamic-procurement-dashboard/issues"
+  },
+  "homepage": "https://github.com/myownipgit/dynamic-procurement-dashboard#readme",
+  "main": "src/index.js",
+  "private": false,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.8.0",
+    "axios": "^1.6.0",
+    "lodash": "^4.17.21",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/lodash": "^4.14.200",
+    "@vitejs/plugin-react": "^4.1.1",
+    "vite": "^5.0.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "tailwindcss": "^3.3.5",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "test": "echo \"Tests coming soon!\" && exit 0",
+    "type-check": "tsc --noEmit",
+    "db:setup": "sqlite3 procurement.db < data/database-schema.sql",
+    "db:reset": "rm -f procurement.db && npm run db:setup",
+    "start": "npm run dev"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "no-unused-vars": "warn",
+      "no-console": "warn"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/myownipgit"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "optionalDependencies": {
+    "sqlite3": "^5.1.6",
+    "pg": "^8.11.3",
+    "mysql2": "^3.6.5"
+  }
+}

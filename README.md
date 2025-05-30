@@ -1,4 +1,4 @@
-# 🚀 Dynamic Procurement Dashboard
+# 🚀 Dynamic Procurement Charts for Dashboard
 
 [![React](https://img.shields.io/badge/React-18+-blue.svg)](https://reactjs.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
